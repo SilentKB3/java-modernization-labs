@@ -39,5 +39,5 @@ java-modernization-labs/
 
 
 ## Modules
-[Day 1 – Immutable Config Loader](day1)
+[Day 1 – Immutable Config Loader](day1-immutable-config-loader)
 
