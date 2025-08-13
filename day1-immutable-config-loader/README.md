@@ -1,38 +1,39 @@
-# Day 1 — Immutable Config Loader
+# Day 1 – Immutable Config Loader
 
-This module reads a `config.properties` file from the `src/main/resources` folder, loads it into an **immutable map**, and supports optional masking of secrets and JSON export.
+This module reads a `config.properties` file from the `src/main/resources` folder,  
+loads it into an **immutable map**, and supports **optional masking of secrets** and **JSON export**.
 
 ---
 
-## Features
-- **Immutable map** - loaded configuration
-- **Optional masking** - mask secret values (passwords, tokens, keys) with `--mask`.
-- **JSON export** - export configuration as JSON with `--json`.
-- **Combined flags** - `--mask` and `--json` can be used together in any order
-- **Unit tests** - verifies core features and edge cases using JUnit 5
-  
+## ✨ Features
+- **Immutable map** – configuration is read-only after loading.
+- **Optional masking** – hide secret values (passwords, tokens, keys) with `--mask`.
+- **JSON export** – export configuration in JSON format with `--json`.
+- **Combined flags** – `--mask` and `--json` can be used together in any order.
+- **Unit tests** – core features and edge cases tested with **JUnit 5**.
+
 ---
 
-## Requirements
-- JDK 17 (primary target)
-- Maven 3.6
+## 📦 Requirements
+- **Java 17+** (primary target)
+- **Maven 3.6+**
 - IntelliJ IDEA (recommended)
 
 ---
 
 ## Project Structure
-day1-immutable-config-loader
-  src
-    main
-      java/com/example/configloader/
-        ConfigLoader.java
-      resources
-        confg.properties
-    test
-      java/com/example/configLoader/
-        ConfigLoaderTest.javaa
-  pom.xml
-  README.md
+day1-immutable-config-loader/
+├── src/
+│ ├── main/
+│ │ ├── java/com/example/configloader/
+│ │ │ └── ConfigLoader.java
+│ │ └── resources/
+│ │ └── config.properties
+│ └── test/
+│ └── java/com/example/configloader/
+│ └── ConfigLoaderTest.java
+├── pom.xml
+└── README.md
 
 ---
 
@@ -41,27 +42,30 @@ day1-immutable-config-loader
 ### 1. Compile & Package
 ```bash
 mvn -q clean package
-java -cp target/day1-immutable-config-loader-1.0.0.jar com.example.configloader.ConfigLoader
 ```
 
 Run Normally:
 ```bash
-java -cp target/day1-immutable-config-loader-1.0.0.jar com.example.configloader.ConfigLoader
+java -cp target/day1-immutable-config-loader-1.0.0.jar \
+  com.example.configloader.ConfigLoader```
 ```
 
-Run with masking secrets:
+Run with Masking Secrets:
 ```bash
-java -cp target/day1-immutable-config-loader-1.0.0.jar com.example.configloader.ConfigLoader --mask
+java -cp target/day1-immutable-config-loader-1.0.0.jar \
+  com.example.configloader.ConfigLoader --mask
 ```
 
-Run to export as JSON:
+Run with JSON exports:
 ```bash
-java -cp target/day1-immutable-config-loader-1.0.0.jar com.example.configloader.ConfigLoader --json
+java -cp target/day1-immutable-config-loader-1.0.0.jar \
+  com.example.configloader.ConfigLoader --json
 ```
 
-Run (with JSON and masking):
+5. Run with Both JSON & Masking
 ```bash
-java -cp target/day1-immutable-config-loader-1.0.0.jar com.example.configloader.ConfigLoader --json --mask
+java -cp target/day1-immutable-config-loader-1.0.0.jar \
+  com.example.configloader.ConfigLoader --json --mask
 ```
 
 Run Tests
@@ -97,13 +101,16 @@ db.password=***********
 api.key=******
 timeout=30
 
+
 ### With JSON
+== JSON Export ==
 {
   "db.username": "admin",
   "db.password": "supersecret",
   "api.key": "123456",
   "timeout": "30"
 }
+
 
 ---
 
