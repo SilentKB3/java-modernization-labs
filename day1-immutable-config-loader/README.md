@@ -38,3 +38,10 @@ Run (with Json and masking):
 ```bash
 java -cp target/day1-immutable-config-loader-1.0.0.jar com.example.configloader.ConfigLoader --json --mask
 ```
+
+## Development & Testing
+- Java 17 or later required
+- Build:
+``` bash
+mvn clean package
+```
