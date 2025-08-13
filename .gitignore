@@ -1,0 +1,25 @@
+# =========================
+# Maven
+# =========================
+target/
+*.log
+*.tmp
+
+# =========================
+# IntelliJ IDEA
+# =========================
+.idea/
+*.iml
+out/
+
+# =========================
+# OS-specific
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Config & Secrets
+# =========================
+*.properties
+!src/main/resources/config.properties   # keep this one if you want it in repo
