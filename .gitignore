@@ -4,6 +4,8 @@
 target/
 *.log
 *.tmp
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
 
 # =========================
 # IntelliJ IDEA
@@ -23,3 +25,9 @@ Thumbs.db
 # =========================
 *.properties
 !src/main/resources/config.properties   # keep this one if you want it in repo
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.bak
