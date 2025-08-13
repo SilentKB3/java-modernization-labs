@@ -26,3 +26,18 @@ Each **day** builds on modern Java practices, tools, and APIs, progressing from 
 ```bash
 git clone https://github.com/SilentKB3/java-modernization-labs.git
 cd java-modernization-labs
+```
+
+## Structure
+java-modernization-labs/
+├── day0/   # Environment setup notes & scripts
+├── day1/   # Immutable Config Loader
+│   ├── src/
+│   ├── pom.xml
+│   └── README.md
+└── README.md  # This file
+
+
+## Modules
+[Day 1 – Immutable Config Loader](day1)
+
