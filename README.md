@@ -1,21 +1,28 @@
-# java-modernization-labs
-A collection of hands-on Java projects exploring new features from Java 9 to Java 21, along with concurrency, functional programming, and design principles
+# Java Modernization Labs
 
-## Structure
-- Each sprint is in its own folder, e.g., `day1-config-loader/`
-  - `src/` — Source files
-  - `resources/` — Supporting data (e.g., `.properties`)
-  - `README.md` — Sprint-specific documentation
+A collection of small, focused Java modernization exercises.  
+Each **day** builds on modern Java practices, tools, and APIs, progressing from core syntax to advanced patterns and frameworks.
 
-## Goals
-- Become fluent with modern Java (post–Java 8)
-- Build concurrency, functional programming, and OO design skills
-- Create GitHub-ready artifacts for your portfolio
+---
 
-## Tools
-- Java 17 (primary target)
-- IntelliJ IDEA
-- Maven or Gradle (as desired)
+## 📅 Labs Overview
 
-## License
-MIT
+| Day  | Module Name                        | Description |
+|------|------------------------------------|-------------|
+| 0    | Environment Setup                  | Setting up Java 17, Maven, IntelliJ, and Git. |
+| 1    | Immutable Config Loader             | Load `config.properties` into an immutable map with optional secret masking and JSON export. |
+| 2+   | *(Coming soon)*                     | TBD |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Java 17+
+- Maven 3.6+
+- IntelliJ IDEA (recommended)
+
+### Clone the Repository
+```bash
+git clone https://github.com/SilentKB3/java-modernization-labs.git
+cd java-modernization-labs
