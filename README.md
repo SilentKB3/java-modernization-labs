@@ -19,3 +19,7 @@ A collection of hands-on Java projects exploring new features from Java 9 to Jav
 
 ## License
 MIT
+
+# Day 1 - Immutable Config Loader
+
+Load a `.properties` file into an **immutable** `Map<String, String>` using Java 9+ factory methods and print the configuration safely.
