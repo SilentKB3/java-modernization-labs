@@ -1,21 +1,25 @@
 # =========================
 # Maven
 # =========================
-target/
-*.log
+/target/
 *.tmp
 .mvn/
 !/.mvn/wrapper/maven-wrapper.jar
 
 # =========================
-# IntelliJ IDEA
+# IntelliJ IDEA Project Files
 # =========================
 .idea/
 *.iml
 out/
 
 # =========================
-# OS-specific
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS-specific Files
 # =========================
 .DS_Store
 Thumbs.db
